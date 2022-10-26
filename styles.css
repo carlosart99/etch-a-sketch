@@ -1,5 +1,4 @@
 body{
-    background-color: #708090;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +8,9 @@ body{
 button{
     width: 250px;
     height: 70px;
-    border: 2.5px solid orangered;
+    border: 2.5px solid #0275d8;
+    background-color: #0275d8;
+    color: white;
     border-radius: 8px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -18,9 +19,8 @@ button{
 }
 
 button:hover{
-    background-color: #708090;
-    transition: 0.3;
-    
+    opacity: .9;
+    transition: 0.3;    
 }
 
 .container{
@@ -31,14 +31,14 @@ button:hover{
     max-height: 960px;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-
+    grid-gap: 2px;
     /* grid-auto-rows: minmax(100px, 16); */
 }
 
 .container div{
     width:auto;
     height:auto;
-    border: 2.5px solid orangered;
+    border: 2.5px solid #0275d8;
     border-radius: 8px;    
 }
 
